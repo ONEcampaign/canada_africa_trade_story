@@ -1,0 +1,25 @@
+name: Autoformat with Black
+
+on: [pull_request]
+
+permissions:
+  contents: write
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: psf/black@stable
+        with:
+          options: "--verbose"
+          src: "./scripts"
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Autoformat code with Black"
+          git push origin HEAD:${{ github.head_ref }}
