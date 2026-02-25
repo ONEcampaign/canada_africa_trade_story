@@ -1,4 +1,4 @@
-# Project title
-Project description
+# Canada-Africa trade story
 
-This template is configured to manage dependencies with UV.
+This repository contains files to replicate data tables and key results presented in the advocacy piece "Why Canada
+should trade more with Africa", published in ONE Data.

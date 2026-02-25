@@ -131,3 +131,6 @@ dmypy.json
 
 # Ignore DataSpell
 .idea/
+
+# pydeflate
+/raw_data/pydeflate

@@ -3,5 +3,10 @@ name = "add-project-name-here"
 version = "0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = []
+requires-python = ">=3.13"
+dependencies = [
+    "bblocks-data-importers==0.5.0",
+    "bblocks-places>=0.0.5",
+    "pandas>=2.3.3",
+    "pydeflate>=2.3.4",
+]
