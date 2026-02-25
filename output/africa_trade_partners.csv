@@ -1,0 +1,29 @@
+country,flow,2005,2024,unit
+ASEAN,Exports,1.3609433025557904,1.401655341852011,% of partner's total trade
+ASEAN,Exports,21.148753040922,39.928600938698004,"CAD billion, constant 2024"
+ASEAN,Imports,0.8002612078525311,1.7615841047521557,% of partner's total trade
+ASEAN,Imports,10.69859931811,45.088158822314,"CAD billion, constant 2024"
+Canada,Exports,0.5635776154419473,0.8285106574345372,% of partner's total trade
+Canada,Exports,3.735497840312,6.227939462775001,"CAD billion, constant 2024"
+Canada,Imports,1.7521502256920791,1.401705222493868,% of partner's total trade
+Canada,Imports,10.338419566155,9.955458031116999,"CAD billion, constant 2024"
+China,Exports,2.066296509980693,4.683260141576614,% of partner's total trade
+China,Exports,54.631339697038,230.85342012693602,"CAD billion, constant 2024"
+China,Imports,3.5075399116295967,5.185499550548002,% of partner's total trade
+China,Imports,54.33106870718,154.18469668811102,"CAD billion, constant 2024"
+EU27,Exports,2.6026016439525286,2.9646766044445503,% of partner's total trade
+EU27,Exports,161.784339162653,254.286714428921,"CAD billion, constant 2024"
+EU27,Imports,3.347867085644544,3.341223534545045,% of partner's total trade
+EU27,Imports,213.478394390015,292.407449212275,"CAD billion, constant 2024"
+India,Exports,6.388165487819071,8.687788212021934,% of partner's total trade
+India,Exports,15.605559376409,54.964631028829004,"CAD billion, constant 2024"
+India,Imports,5.449119736378655,7.021871816310853,% of partner's total trade
+India,Imports,12.807339594012,66.417859349789,"CAD billion, constant 2024"
+United Kingdom,Exports,2.8186531822564556,2.971607186968858,% of partner's total trade
+United Kingdom,Exports,15.832342979335001,16.511840447329,"CAD billion, constant 2024"
+United Kingdom,Imports,3.3019367127215737,3.828896049470952,% of partner's total trade
+United Kingdom,Imports,26.395881104209,37.956251648042,"CAD billion, constant 2024"
+United States,Exports,1.782785051427373,2.030417257009779,% of partner's total trade
+United States,Exports,34.136547527571,51.868313049197,"CAD billion, constant 2024"
+United States,Imports,4.03776258095896,1.308775410606331,% of partner's total trade
+United States,Imports,143.142128468705,56.622416003255005,"CAD billion, constant 2024"
