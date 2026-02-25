@@ -2,14 +2,14 @@
 Africa trade partners comparison.
 
 Compares bilateral trade flows between Africa (aggregate) and key global
-partners — EU27, ASEAN, and selected individual countries — for 2005 and 2025.
+partners — EU27, ASEAN, and selected individual countries — for 2005 and 2024.
 
 Output (Paths.output / "africa_trade_partners.csv"):
   country  — trading bloc or country name (EU27 / ASEAN / individual)
-  flow     — direction from the partner's perspective (Exports / Imports)
+  flow     — direction from the partner's perspective (Exports to Africa / Imports from Africa)
   2005     — trade value in 2005
   2024     — trade value in 2024
-  unit     — 'thousand USD, constant 2023' or '% of total trade'
+  unit     — 'CAD billion, constant 2024' or '% of trade'
 """
 
 import pandas as pd
@@ -68,24 +68,15 @@ ASEAN_CODES = [
     "VNM",  # Vietnam
 ]
 
-OTHER_CODES = [
-    "CAN",  # Canada
-    "CHN",  # China
-    "IND",  # India
-    "GBR",  # United Kingdom
-    "USA",  # United States
-]
-
-# Display names for individual countries in OTHER_CODES
-OTHER_NAMES = {
+OTHER_CODES = {
     "CAN": "Canada",
     "CHN": "China",
     "IND": "India",
-    "GBR": "United Kingdom",
-    "USA": "United States",
+    "GBR": "UK",
+    "USA": "USA",
 }
 
-ALL_PARTNER_CODES = set(EU_27_CODES + ASEAN_CODES + OTHER_CODES)
+ALL_PARTNER_CODES = set(EU_27_CODES + ASEAN_CODES + list(OTHER_CODES.keys()))
 
 
 def load_format_data() -> pd.DataFrame:
@@ -98,8 +89,8 @@ def load_format_data() -> pd.DataFrame:
         where value is in thousands of current USD.
     """
     baci = BACI()
-    df_raw = baci.get_data(hs_version="HS02")
-    country_codes = baci.get_country_codes()[["country_code", "iso3_code"]]
+    df_raw = baci.get_data(hs_version=HS_VERSION)
+    country_codes = baci.get_country_codes(hs_version=HS_VERSION)[["country_code", "iso3_code"]]
 
     return (
         df_raw
@@ -171,7 +162,7 @@ def filter_africa_partner_trade(df: pd.DataFrame) -> pd.DataFrame:
     -------
     DataFrame with added columns:
         partner_iso3 — ISO3 code of the non-African trading partner
-        flow         — 'Exports' or 'Imports' from the partner's perspective
+        flow         — 'Exports to Africa' or 'Imports from Africa' from the partner's perspective
     """
     # Derive the full set of African ISO3 codes present in the dataset
     all_codes = pd.concat([df["importer_iso3"], df["exporter_iso3"]]).dropna().unique().tolist()
@@ -182,13 +173,13 @@ def filter_africa_partner_trade(df: pd.DataFrame) -> pd.DataFrame:
     # Partner exports to Africa: partner is exporter, African country is importer
     exports_to_africa = (
         df[df["importer_iso3"].isin(african_iso3) & df["exporter_iso3"].isin(ALL_PARTNER_CODES)]
-        .assign(flow="Exports", partner_iso3=lambda d: d["exporter_iso3"])
+        .assign(flow="Exports to Africa", partner_iso3=lambda d: d["exporter_iso3"])
     )
 
     # Partner imports from Africa: partner is importer, African country is exporter
     imports_from_africa = (
         df[df["exporter_iso3"].isin(african_iso3) & df["importer_iso3"].isin(ALL_PARTNER_CODES)]
-        .assign(flow="Imports", partner_iso3=lambda d: d["importer_iso3"])
+        .assign(flow="Imports from Africa", partner_iso3=lambda d: d["importer_iso3"])
     )
 
     return pd.concat([exports_to_africa, imports_from_africa], ignore_index=True)
@@ -200,7 +191,7 @@ def assign_partner_group(df: pd.DataFrame) -> pd.DataFrame:
 
     EU27 members → 'EU27'
     ASEAN members → 'ASEAN'
-    Other tracked countries → display name from OTHER_NAMES (falls back to ISO3)
+    Other tracked countries → display name from OTHER_CODES (falls back to ISO3)
 
     Parameters
     ----------
@@ -219,7 +210,7 @@ def assign_partner_group(df: pd.DataFrame) -> pd.DataFrame:
             return "EU27"
         if iso3 in asean_set:
             return "ASEAN"
-        return OTHER_NAMES.get(iso3, iso3)
+        return OTHER_CODES.get(iso3, iso3)
 
     return df.assign(country=lambda d: d["partner_iso3"].map(_group))
 
@@ -266,16 +257,16 @@ def compute_partner_totals(df_raw: pd.DataFrame) -> pd.DataFrame:
     DataFrame with columns: country, flow, year, total_value
         where total_value is total trade in CAD billion, constant BASE_YEAR.
     """
-    # Tracked partner as exporter → their total exports to the whole world
+    # Tracked partner as exporter → worldwide export total (flow label matches Africa data for merge)
     total_exports = (
         df_raw[df_raw["exporter_iso3"].isin(ALL_PARTNER_CODES)]
-        .assign(flow="Exports", partner_iso3=lambda d: d["exporter_iso3"])
+        .assign(flow="Exports to Africa", partner_iso3=lambda d: d["exporter_iso3"])
     )
 
-    # Tracked partner as importer → their total imports from the whole world
+    # Tracked partner as importer → worldwide import total (flow label matches Africa data for merge)
     total_imports = (
         df_raw[df_raw["importer_iso3"].isin(ALL_PARTNER_CODES)]
-        .assign(flow="Imports", partner_iso3=lambda d: d["importer_iso3"])
+        .assign(flow="Imports from Africa", partner_iso3=lambda d: d["importer_iso3"])
     )
 
     return (
@@ -325,7 +316,7 @@ def build_wide_output(df: pd.DataFrame, df_totals: pd.DataFrame) -> pd.DataFrame
     df_pct = (
         df.pivot_table(index=["country", "flow"], columns="year", values="pct")
         .reset_index()
-        .assign(unit="% of partner's total trade")
+        .assign(unit="% of trade")
     )
     df_pct.columns.name = None
 

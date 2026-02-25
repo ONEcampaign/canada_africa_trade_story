@@ -27,6 +27,8 @@ from scripts.helpers import fix_encoding, group_trade_data, rename_flows
 
 HS_VERSION = "HS12"
 
+YEAR_RANGE = [2015, 2024]
+
 BASE_YEAR = 2024
 
 # BACI country code for Canada
@@ -74,7 +76,7 @@ def load_prepare_data() -> pd.DataFrame:
     """
     baci = BACI()
     df_raw = baci.get_data(hs_version=HS_VERSION)
-    country_codes = baci.get_country_codes()
+    country_codes = baci.get_country_codes(hs_version=HS_VERSION)
 
     with open(Paths.hs_categories, "r") as f:
         hs_map = json.load(f)
@@ -91,6 +93,7 @@ def load_prepare_data() -> pd.DataFrame:
             .map(hs_to_category)
         )
         .query("importer_code == @CANADA_CODE or exporter_code == @CANADA_CODE")
+        .query("year >= @YEAR_RANGE[0] and year <= @YEAR_RANGE[1]")
         .groupby(["year", "importer_code", "exporter_code", "category"])["value"]
         .sum()
         .reset_index()
