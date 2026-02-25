@@ -1,0 +1,786 @@
+{
+    "01": {
+        "section_description": "Live animals; animal products",
+        "study_category_1": "Other Agriculture",
+        "study_category_2": "Live animal products",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Live animals"
+    },
+    "02": {
+        "section_description": "Live animals; animal products",
+        "study_category_1": "Other Agriculture",
+        "study_category_2": "Live animal products",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Live animals"
+    },
+    "03": {
+        "section_description": "Live animals; animal products",
+        "study_category_1": "Other Agriculture",
+        "study_category_2": "Live animal products",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Live animals"
+    },
+    "04": {
+        "section_description": "Live animals; animal products",
+        "study_category_1": "Other Agriculture",
+        "study_category_2": "Live animal products",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Live animals"
+    },
+    "05": {
+        "section_description": "Live animals; animal products",
+        "study_category_1": "Other Agriculture",
+        "study_category_2": "Live animal products",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Live animals"
+    },
+    "06": {
+        "section_description": "Vegetable products",
+        "study_category_1": "Vegetable Products",
+        "study_category_2": "Live trees bulbs and flowers",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Vegetable products"
+    },
+    "07": {
+        "section_description": "Vegetable products",
+        "study_category_1": "Vegetable Products",
+        "study_category_2": "Edible vegetables ",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Vegetable products"
+    },
+    "08": {
+        "section_description": "Vegetable products",
+        "study_category_1": "Vegetable Products",
+        "study_category_2": "Edible fruit and nuts ",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Vegetable products"
+    },
+    "09": {
+        "section_description": "Vegetable products",
+        "study_category_1": "Vegetable Products",
+        "study_category_2": "Coffee tea and spices",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Vegetable products"
+    },
+    "10": {
+        "section_description": "Vegetable products",
+        "study_category_1": "Vegetable Products",
+        "study_category_2": "Cereals",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Vegetable products"
+    },
+    "11": {
+        "section_description": "Vegetable products",
+        "study_category_1": "Vegetable Products",
+        "study_category_2": "Milled products",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Vegetable products"
+    },
+    "12": {
+        "section_description": "Vegetable products",
+        "study_category_1": "Vegetable Products",
+        "study_category_2": "Oil seeds",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Vegetable products"
+    },
+    "13": {
+        "section_description": "Vegetable products",
+        "study_category_1": "Vegetable Products",
+        "study_category_2": "Gums and resins",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Vegetable products"
+    },
+    "14": {
+        "section_description": "Vegetable products",
+        "study_category_1": "Vegetable Products",
+        "study_category_2": "Vegetable plaiting materials",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Vegetable products"
+    },
+    "15": {
+        "section_description": "Animal, vegetable or microbial fats and oils and their cleavage\u00a0products; prepared edible fats; animal or vegetable waxes",
+        "study_category_1": "Other Agriculture",
+        "study_category_2": "Prepared edible fats ",
+        "study_category": "Live animals",
+        "one_section": "Agri-food products",
+        "one_category_1": "Live animals"
+    },
+    "16": {
+        "section_description": "Prepared foodstuffs; beverages, spirits and vinegar; tobacco and manufactured tobacco substitutes; products, whether or not containing nicotine, intended for inhalation without combustion; other nicotine containing products intended for the intake of nicotine into the human body",
+        "study_category_1": "Prepared Foodstuffs, Beverages",
+        "study_category_2": "Meat and fish preparationsPreparations of meat, of fish, of crustaceans, molluscs or other aquatic invertebrates, or of insects.",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Prepared foods"
+    },
+    "17": {
+        "section_description": "Prepared foodstuffs; beverages, spirits and vinegar; tobacco and manufactured tobacco substitutes; products, whether or not containing nicotine, intended for inhalation without combustion; other nicotine containing products intended for the intake of nicotine into the human body",
+        "study_category_1": "Prepared Foodstuffs, Beverages",
+        "study_category_2": "Sugars",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Prepared foods"
+    },
+    "18": {
+        "section_description": "Prepared foodstuffs; beverages, spirits and vinegar; tobacco and manufactured tobacco substitutes; products, whether or not containing nicotine, intended for inhalation without combustion; other nicotine containing products intended for the intake of nicotine into the human body",
+        "study_category_1": "Prepared Foodstuffs, Beverages",
+        "study_category_2": "Cocoa preparations.",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Prepared foods"
+    },
+    "19": {
+        "section_description": "Prepared foodstuffs; beverages, spirits and vinegar; tobacco and manufactured tobacco substitutes; products, whether or not containing nicotine, intended for inhalation without combustion; other nicotine containing products intended for the intake of nicotine into the human body",
+        "study_category_1": "Prepared Foodstuffs, Beverages",
+        "study_category_2": "Preparations of cereals, flour, starch or milk ",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Prepared foods"
+    },
+    "20": {
+        "section_description": "Prepared foodstuffs; beverages, spirits and vinegar; tobacco and manufactured tobacco substitutes; products, whether or not containing nicotine, intended for inhalation without combustion; other nicotine containing products intended for the intake of nicotine into the human body",
+        "study_category_1": "Prepared Foodstuffs, Beverages",
+        "study_category_2": "Preparations of vegetables, fruit, nuts  ",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Prepared foods"
+    },
+    "21": {
+        "section_description": "Prepared foodstuffs; beverages, spirits and vinegar; tobacco and manufactured tobacco substitutes; products, whether or not containing nicotine, intended for inhalation without combustion; other nicotine containing products intended for the intake of nicotine into the human body",
+        "study_category_1": "Prepared Foodstuffs, Beverages",
+        "study_category_2": "Miscellaneous edible preparations.",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Prepared foods"
+    },
+    "22": {
+        "section_description": "Prepared foodstuffs; beverages, spirits and vinegar; tobacco and manufactured tobacco substitutes; products, whether or not containing nicotine, intended for inhalation without combustion; other nicotine containing products intended for the intake of nicotine into the human body",
+        "study_category_1": "Prepared Foodstuffs, Beverages",
+        "study_category_2": "Beverages, spirits and vinegar",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Prepared foods"
+    },
+    "23": {
+        "section_description": "Prepared foodstuffs; beverages, spirits and vinegar; tobacco and manufactured tobacco substitutes; products, whether or not containing nicotine, intended for inhalation without combustion; other nicotine containing products intended for the intake of nicotine into the human body",
+        "study_category_1": "Prepared Foodstuffs, Beverages",
+        "study_category_2": "Food residues and waste",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Prepared foods"
+    },
+    "24": {
+        "section_description": "Prepared foodstuffs; beverages, spirits and vinegar; tobacco and manufactured tobacco substitutes; products, whether or not containing nicotine, intended for inhalation without combustion; other nicotine containing products intended for the intake of nicotine into the human body",
+        "study_category_1": "Prepared Foodstuffs, Beverages",
+        "study_category_2": "Tobacco ",
+        "study_category": "Agriculture",
+        "one_section": "Agri-food products",
+        "one_category_1": "Prepared foods"
+    },
+    "25": {
+        "section_description": "Mineral products",
+        "study_category_1": "Minerals",
+        "study_category_2": "Salt; sulphur; earths and stone",
+        "study_category": "Mineral products",
+        "one_section": "Minerals & fuels",
+        "one_category_1": "Minerals & fuels"
+    },
+    "26": {
+        "section_description": "Mineral products",
+        "study_category_1": "Minerals",
+        "study_category_2": "Ores ",
+        "study_category": "Mineral products",
+        "one_section": "Minerals & fuels",
+        "one_category_1": "Minerals & fuels"
+    },
+    "27": {
+        "section_description": "Mineral products",
+        "study_category_1": "Minerals",
+        "study_category_2": "Mineral fuels ",
+        "study_category": "Mineral products",
+        "one_section": "Minerals & fuels",
+        "one_category_1": "Minerals & fuels"
+    },
+    "28": {
+        "section_description": "Products of the chemical or allied industries",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Chemical products ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "29": {
+        "section_description": "Products of the chemical or allied industries",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Chemical products ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "30": {
+        "section_description": "Products of the chemical or allied industries",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Chemical products ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "31": {
+        "section_description": "Products of the chemical or allied industries",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Chemical products ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "32": {
+        "section_description": "Products of the chemical or allied industries",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Chemical products ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "33": {
+        "section_description": "Products of the chemical or allied industries",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Chemical products ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "34": {
+        "section_description": "Products of the chemical or allied industries",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Chemical products ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "35": {
+        "section_description": "Products of the chemical or allied industries",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Chemical products ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "36": {
+        "section_description": "Products of the chemical or allied industries",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Chemical products ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "37": {
+        "section_description": "Products of the chemical or allied industries",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Chemical products ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "38": {
+        "section_description": "Products of the chemical or allied industries",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Chemical products ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "39": {
+        "section_description": "Plastics and articles thereof; rubber and articles thereof",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Plastics and rubber",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "40": {
+        "section_description": "Plastics and articles thereof; rubber and articles thereof",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Plastics and rubber",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "41": {
+        "section_description": "Raw hides and skins, leather, furskins and articles thereof; saddlery and harness; travel goods, handbags and similar containers; articles of animal gut (other than silk-worm gut)",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Leather and furskins ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "42": {
+        "section_description": "Raw hides and skins, leather, furskins and articles thereof; saddlery and harness; travel goods, handbags and similar containers; articles of animal gut (other than silk-worm gut)",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Leather and furskins ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "43": {
+        "section_description": "Raw hides and skins, leather, furskins and articles thereof; saddlery and harness; travel goods, handbags and similar containers; articles of animal gut (other than silk-worm gut)",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Leather and furskins ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "44": {
+        "section_description": "Wood and articles of wood; wood charcoal; cork and articles of cork; manufactures of straw, of esparto or of other plaiting materials; basketware and wickerwork",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Wood and articles of wood",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "45": {
+        "section_description": "Wood and articles of wood; wood charcoal; cork and articles of cork; manufactures of straw, of esparto or of other plaiting materials; basketware and wickerwork",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Wood and articles of wood",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "46": {
+        "section_description": "Wood and articles of wood; wood charcoal; cork and articles of cork; manufactures of straw, of esparto or of other plaiting materials; basketware and wickerwork",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Wood and articles of wood",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "47": {
+        "section_description": "Pulp of wood or of other fibrous cellulosic material; recovered (waste and scrap) paper or paperboard; paper and paperboard and articles thereof",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Pulp and paper",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "48": {
+        "section_description": "Pulp of wood or of other fibrous cellulosic material; recovered (waste and scrap) paper or paperboard; paper and paperboard and articles thereof",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Pulp and paper",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "49": {
+        "section_description": "Pulp of wood or of other fibrous cellulosic material; recovered (waste and scrap) paper or paperboard; paper and paperboard and articles thereof",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Pulp and paper",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "50": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "51": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "52": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "53": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "54": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "55": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "56": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "57": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "58": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "59": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "60": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "61": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "62": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "63": {
+        "section_description": "Textiles and textile articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Textiles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "64": {
+        "section_description": "Footwear, headgear, umbrellas, sun umbrellas, walking-sticks, seat-sticks, whips, riding-crops and parts thereof; prepared feathers and articles made therewith; artificial flowers; articles of human hair",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Footwear and accessories",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "65": {
+        "section_description": "Footwear, headgear, umbrellas, sun umbrellas, walking-sticks, seat-sticks, whips, riding-crops and parts thereof; prepared feathers and articles made therewith; artificial flowers; articles of human hair",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Footwear and accessories",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "66": {
+        "section_description": "Footwear, headgear, umbrellas, sun umbrellas, walking-sticks, seat-sticks, whips, riding-crops and parts thereof; prepared feathers and articles made therewith; artificial flowers; articles of human hair",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Footwear and accessories",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "67": {
+        "section_description": "Footwear, headgear, umbrellas, sun umbrellas, walking-sticks, seat-sticks, whips, riding-crops and parts thereof; prepared feathers and articles made therewith; artificial flowers; articles of human hair",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Footwear and accessories",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "68": {
+        "section_description": "Articles of stone, plaster, cement, asbestos, mica or similar materials; ceramic products; glass and glassware",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Articles of stone, plaster, cement ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "69": {
+        "section_description": "Articles of stone, plaster, cement, asbestos, mica or similar materials; ceramic products; glass and glassware",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Articles of stone, plaster, cement ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "70": {
+        "section_description": "Articles of stone, plaster, cement, asbestos, mica or similar materials; ceramic products; glass and glassware",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Articles of stone, plaster, cement ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "71": {
+        "section_description": "Natural or cultured pearls, precious or semi-precious stones, precious metals, metals clad with precious metal and articles thereof; imitation jewellery; coin",
+        "study_category_1": "Exclude",
+        "study_category_2": "Exclude",
+        "study_category": "Exclude",
+        "one_section": "Precious metals & stones",
+        "one_category_1": "Precious metals & stones"
+    },
+    "72": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "Iron and steel",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "73": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "Articles of iron or steel",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "74": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "Copper ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "75": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "Nickel ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "76": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "Aluminium",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "77": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "(Reserved for possible future use in the Harmonized System)",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "78": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "Lead ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "79": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "Zinc ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "80": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "Tin  ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "81": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "Other base metals ",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "82": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "Metal tools",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "83": {
+        "section_description": "Base metals and articles of base metal",
+        "study_category_1": "Base Metals and Articles of base metals",
+        "study_category_2": "Miscellaneous articles of base metal.",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "84": {
+        "section_description": "Machinery and mechanical appliances; electrical equipment; parts thereof; sound recorders and reproducers, television image and sound recorders and reproducers, and parts and accessories of such articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Machinery and mechanical appliances",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "85": {
+        "section_description": "Machinery and mechanical appliances; electrical equipment; parts thereof; sound recorders and reproducers, television image and sound recorders and reproducers, and parts and accessories of such articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Machinery and mechanical appliances",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Base metals"
+    },
+    "86": {
+        "section_description": "Vehicles, aircraft, vessels and associated transport equipment",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Transport equipment",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "87": {
+        "section_description": "Vehicles, aircraft, vessels and associated transport equipment",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Transport equipment",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "88": {
+        "section_description": "Vehicles, aircraft, vessels and associated transport equipment",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Transport equipment",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "89": {
+        "section_description": "Vehicles, aircraft, vessels and associated transport equipment",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Transport equipment",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "90": {
+        "section_description": "Optical, photographic, cinematographic, measuring, checking, precision, medical or surgical instruments and apparatus; clocks and watches; musical instruments;",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Optical medical and musical instruments;",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "91": {
+        "section_description": "Optical, photographic, cinematographic, measuring, checking, precision, medical or surgical instruments and apparatus; clocks and watches; musical instruments;",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Optical medical and musical instruments;",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "92": {
+        "section_description": "Optical, photographic, cinematographic, measuring, checking, precision, medical or surgical instruments and apparatus; clocks and watches; musical instruments;",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Optical medical and musical instruments;",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "93": {
+        "section_description": "Arms and ammunition; parts and accessories thereof",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Arms and ammunition",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "94": {
+        "section_description": "Miscellaneous manufactured articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Miscellaneous manufactured articles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "95": {
+        "section_description": "Miscellaneous manufactured articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Miscellaneous manufactured articles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "96": {
+        "section_description": "Miscellaneous manufactured articles",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Miscellaneous manufactured articles",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "97": {
+        "section_description": "Works of art, collectors' pieces and antiques",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Works of art, collectors' pieces and antiques",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    },
+    "99": {
+        "section_description": "Commodities not specified according to kind",
+        "study_category_1": "Other Manufacturing",
+        "study_category_2": "Commodities not specified according to kind",
+        "study_category": "Manufacturing",
+        "one_section": "Manufactured goods",
+        "one_category_1": "Manufactured goods"
+    }
+}
