@@ -39,6 +39,8 @@ def group_trade_data(
     df_pct : DataFrame
         Pivoted table with each value as a % of the global flow total.
     """
+    unit = df["unit"].iloc[0] if "unit" in df.columns else None
+
     df_grouped = df.groupby(groupby_cols)[["Exports", "Imports"]].sum().reset_index()
 
     df_melted = df_grouped.melt(
@@ -71,6 +73,10 @@ def group_trade_data(
     df_pct = df_pct.reset_index()
     df_value.columns.name = None
     df_pct.columns.name = None
+
+    if unit is not None:
+        df_value["unit"] = unit
+        df_pct["unit"] = unit
 
     return df_value, df_pct
 
