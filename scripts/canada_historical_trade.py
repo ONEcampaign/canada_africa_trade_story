@@ -128,7 +128,7 @@ def load_prepare_data() -> pd.DataFrame:
 
 def deflate_trade(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Convert trade values from current USD to constant 2023 CAD.
+    Convert trade values from current USD to constant 2024 CAD.
 
     Uses IMF GDP deflators via pydeflate. The source currency is USD (BACI
     values are reported in thousands of current USD) and the target is CAD,
@@ -141,7 +141,7 @@ def deflate_trade(df: pd.DataFrame) -> pd.DataFrame:
 
     Returns
     -------
-    DataFrame with 'value' replaced by constant 2023 CAD thousands.
+    DataFrame with 'value' replaced by constant 2024 CAD thousands.
     """
     set_pydeflate_path(Paths.pydeflate)
 
@@ -212,7 +212,7 @@ def reshape_trade_data(df: pd.DataFrame) -> pd.DataFrame:
     ).assign(
         Imports=lambda d: d["Imports"].fillna(0),
         Exports=lambda d: d["Exports"].fillna(0),
-        unit="thousand CAD, base 2023",
+        unit=f"thousand CAD, constant {BASE_YEAR}",
     )
 
     return merged
