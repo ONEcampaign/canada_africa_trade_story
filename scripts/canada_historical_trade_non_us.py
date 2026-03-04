@@ -86,44 +86,48 @@ def load_prepare_data() -> pd.DataFrame:
     hs_to_category = {hs2: entry["one_section"] for hs2, entry in hs_map.items()}
 
     df = (
-
-    df_raw
-    # Filter early to shrink the dataset massively (CRITICAL)
-    .loc[lambda d: d["year"].between (YEAR_RANGE[0], YEAR_RANGE[1])]
-    .loc[lambda d: (d["importer_code"].eq(CANADA_CODE)) | (d["exporter_code"].eq(CANADA_CODE))]
-    # Compute HS2 category using numeric operations (avoid stringifying 140M rows)
-    .assign(
-        hs2=lambda d: d["product_code"].astype("int64") // 10000,
-        category=lambda d: d["hs2"].astype(str).str.zfill(2).map(hs_to_category),
-    )
-    .drop(columns=["hs2"])
-    # Aggregate to Canada bilateral flows by category
-    .groupby(["year", "importer_code", "exporter_code", "category"], as_index=False)["value"]
-    .sum()
-    # Attach ISO3 codes and country names for both trade partners
-    .merge(
-        country_codes.rename(
-            columns={
-                "country_code": "importer_code",
-                "iso3_code": "importer_iso3",
-                "country_name": "importer_name",
-            }
-        ),
-        on="importer_code",
-        how="left",
-    )
-    .merge(
-        country_codes.rename(
-            columns={
-                "country_code": "exporter_code",
-                "iso3_code": "exporter_iso3",
-                "country_name": "exporter_name",
-            }
-        ),
-        on="exporter_code",
-        how="left",
-    )
-    .drop(columns=["importer_code", "exporter_code"])
+        df_raw
+        # Filter early to shrink the dataset massively (CRITICAL)
+        .loc[lambda d: d["year"].between(YEAR_RANGE[0], YEAR_RANGE[1])]
+        .loc[
+            lambda d: (d["importer_code"].eq(CANADA_CODE))
+            | (d["exporter_code"].eq(CANADA_CODE))
+        ]
+        # Compute HS2 category using numeric operations (avoid stringifying 140M rows)
+        .assign(
+            hs2=lambda d: d["product_code"].astype("int64") // 10000,
+            category=lambda d: d["hs2"].astype(str).str.zfill(2).map(hs_to_category),
+        )
+        .drop(columns=["hs2"])
+        # Aggregate to Canada bilateral flows by category
+        .groupby(
+            ["year", "importer_code", "exporter_code", "category"], as_index=False
+        )["value"]
+        .sum()
+        # Attach ISO3 codes and country names for both trade partners
+        .merge(
+            country_codes.rename(
+                columns={
+                    "country_code": "importer_code",
+                    "iso3_code": "importer_iso3",
+                    "country_name": "importer_name",
+                }
+            ),
+            on="importer_code",
+            how="left",
+        )
+        .merge(
+            country_codes.rename(
+                columns={
+                    "country_code": "exporter_code",
+                    "iso3_code": "exporter_iso3",
+                    "country_name": "exporter_name",
+                }
+            ),
+            on="exporter_code",
+            how="left",
+        )
+        .drop(columns=["importer_code", "exporter_code"])
     )
     return df
 
@@ -258,13 +262,17 @@ def add_region(df: pd.DataFrame) -> pd.DataFrame:
 
     return df
 
+
 def add_us_bucket(df: pd.DataFrame) -> pd.DataFrame:
     """
     Add a column that splits partners into 'USA' and 'Non-USA' buckets.
     """
     df = df.copy()
-    df["us_bucket"] = df["partner_iso3"].apply(lambda x: "USA" if x == "USA" else "Non-USA")
+    df["us_bucket"] = df["partner_iso3"].apply(
+        lambda x: "USA" if x == "USA" else "Non-USA"
+    )
     return df
+
 
 def main():
     # ------------------------------------------------------------------ #

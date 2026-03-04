@@ -90,20 +90,25 @@ def load_format_data() -> pd.DataFrame:
     """
     baci = BACI()
     df_raw = baci.get_data(hs_version=HS_VERSION)
-    country_codes = baci.get_country_codes(hs_version=HS_VERSION)[["country_code", "iso3_code"]]
+    country_codes = baci.get_country_codes(hs_version=HS_VERSION)[
+        ["country_code", "iso3_code"]
+    ]
 
     return (
-        df_raw
-        .groupby(["year", "importer_code", "exporter_code"])["value"]
+        df_raw.groupby(["year", "importer_code", "exporter_code"])["value"]
         .sum()
         .reset_index()
         .merge(
-            country_codes.rename(columns={"country_code": "importer_code", "iso3_code": "importer_iso3"}),
+            country_codes.rename(
+                columns={"country_code": "importer_code", "iso3_code": "importer_iso3"}
+            ),
             on="importer_code",
             how="left",
         )
         .merge(
-            country_codes.rename(columns={"country_code": "exporter_code", "iso3_code": "exporter_iso3"}),
+            country_codes.rename(
+                columns={"country_code": "exporter_code", "iso3_code": "exporter_iso3"}
+            ),
             on="exporter_code",
             how="left",
         )
@@ -130,17 +135,15 @@ def deflate_trade(df: pd.DataFrame) -> pd.DataFrame:
     """
     set_pydeflate_path(Paths.pydeflate)
 
-    return (
-        imf_gdp_deflate(
-            df,
-            base_year=BASE_YEAR,
-            source_currency="USA",
-            target_currency="CAN",
-            id_column="partner_iso3",
-            year_column="year",
-            value_column="value",
-            target_value_column="value",
-        )
+    return imf_gdp_deflate(
+        df,
+        base_year=BASE_YEAR,
+        source_currency="USA",
+        target_currency="CAN",
+        id_column="partner_iso3",
+        year_column="year",
+        value_column="value",
+        target_value_column="value",
     )
 
 
@@ -165,22 +168,24 @@ def filter_africa_partner_trade(df: pd.DataFrame) -> pd.DataFrame:
         flow         — 'Exports to Africa' or 'Imports from Africa' from the partner's perspective
     """
     # Derive the full set of African ISO3 codes present in the dataset
-    all_codes = pd.concat([df["importer_iso3"], df["exporter_iso3"]]).dropna().unique().tolist()
+    all_codes = (
+        pd.concat([df["importer_iso3"], df["exporter_iso3"]]).dropna().unique().tolist()
+    )
     african_iso3 = set(
         filter_african_countries(all_codes, from_type="iso3_code", not_found="ignore")
     )
 
     # Partner exports to Africa: partner is exporter, African country is importer
-    exports_to_africa = (
-        df[df["importer_iso3"].isin(african_iso3) & df["exporter_iso3"].isin(ALL_PARTNER_CODES)]
-        .assign(flow="Exports to Africa", partner_iso3=lambda d: d["exporter_iso3"])
-    )
+    exports_to_africa = df[
+        df["importer_iso3"].isin(african_iso3)
+        & df["exporter_iso3"].isin(ALL_PARTNER_CODES)
+    ].assign(flow="Exports to Africa", partner_iso3=lambda d: d["exporter_iso3"])
 
     # Partner imports from Africa: partner is importer, African country is exporter
-    imports_from_africa = (
-        df[df["exporter_iso3"].isin(african_iso3) & df["importer_iso3"].isin(ALL_PARTNER_CODES)]
-        .assign(flow="Imports from Africa", partner_iso3=lambda d: d["importer_iso3"])
-    )
+    imports_from_africa = df[
+        df["exporter_iso3"].isin(african_iso3)
+        & df["importer_iso3"].isin(ALL_PARTNER_CODES)
+    ].assign(flow="Imports from Africa", partner_iso3=lambda d: d["importer_iso3"])
 
     return pd.concat([exports_to_africa, imports_from_africa], ignore_index=True)
 
@@ -258,15 +263,13 @@ def compute_partner_totals(df_raw: pd.DataFrame) -> pd.DataFrame:
         where total_value is total trade in CAD billion, constant BASE_YEAR.
     """
     # Tracked partner as exporter → worldwide export total (flow label matches Africa data for merge)
-    total_exports = (
-        df_raw[df_raw["exporter_iso3"].isin(ALL_PARTNER_CODES)]
-        .assign(flow="Exports to Africa", partner_iso3=lambda d: d["exporter_iso3"])
+    total_exports = df_raw[df_raw["exporter_iso3"].isin(ALL_PARTNER_CODES)].assign(
+        flow="Exports to Africa", partner_iso3=lambda d: d["exporter_iso3"]
     )
 
     # Tracked partner as importer → worldwide import total (flow label matches Africa data for merge)
-    total_imports = (
-        df_raw[df_raw["importer_iso3"].isin(ALL_PARTNER_CODES)]
-        .assign(flow="Imports from Africa", partner_iso3=lambda d: d["importer_iso3"])
+    total_imports = df_raw[df_raw["importer_iso3"].isin(ALL_PARTNER_CODES)].assign(
+        flow="Imports from Africa", partner_iso3=lambda d: d["importer_iso3"]
     )
 
     return (
